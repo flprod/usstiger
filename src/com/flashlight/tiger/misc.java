@@ -9,5 +9,4 @@ package com.flashlight.tiger;
  * @author Klicky
  */
 public class misc {
-    
 }

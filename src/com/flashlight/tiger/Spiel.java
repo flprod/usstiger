@@ -17,7 +17,7 @@ package com.flashlight.tiger;
  * @author SebeL, maXpower & Klicky
  * @version 2008.03.30
  */
-class Spiel {
+public class Spiel {
 
     private Parser parser;
     private Raum aktuellerRaum;
