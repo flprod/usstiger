@@ -31,7 +31,7 @@
  2005-12-18 Changed package to "a_jar_stdio_terminal"
 
  */
-package net.java.dev.a_jar_stdio_terminal;
+package com.flashlight.tiger;
 
 import java.io.IOException;
 import java.io.InputStream;
