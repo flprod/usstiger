@@ -33,7 +33,7 @@
  subscriptions.
 
  */
-package com.flashlight.tiger;
+package net.java.dev.a_jar_stdio_terminal;
 
 import java.awt.*;
 import java.util.*;
