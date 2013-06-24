@@ -331,16 +331,13 @@ public class Spiel {
     private void willkommenstextAusgeben() {
         String text;
         char[] toCharArray;
-        text = "\u000C\nWillkommen zu U.S.S Tiger!\nU.S.S. Tiger ist ein nicht mehr ganz so langweiliges  Spiel.\nSie äffenen langsam ihre Augen, in ihre Nase beiät sich der Geruch von verbranntem Trinium.\nSie rangen sich instinktiv zu einer Konsole und aktivieren die Klimakontrolle.\nIhr Kopf schmerzt. Was ist passiert? Wo bin ich? Wer bin ich?\n";
-        toCharArray = text.toCharArray();
-        for (char letter : toCharArray) {
-            print(String.valueOf(letter));
-            try {
-                Thread.sleep(30);
-            } catch (InterruptedException ex) {
-                break;
-            }
-        }
+        text = "\u000C\n"
+                + "Willkommen zu U.S.S Tiger!\n"
+                + "U.S.S. Tiger ist ein nicht mehr ganz so langweiliges  Spiel.\n"
+                + "Sie öffenen langsam ihre Augen, in ihre Nase beiät sich der Geruch von verbranntem Trinium.\n"
+                + "Sie rangen sich instinktiv zu einer Konsole und aktivieren die Klimakontrolle.\n"
+                + "Ihr Kopf schmerzt. Was ist passiert? Wo bin ich? Wer bin ich?\n";
+        Function.schreibmaschine(text);
     }
 
     /**

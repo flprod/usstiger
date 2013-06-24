@@ -158,6 +158,7 @@ public class StdioTerm implements ActionListener, KeyListener {
 
     @Override
     public void keyPressed(KeyEvent ke) {
+        // com.flashlight.tiger.Function.unterbrechen();
     }
 
     @Override
@@ -274,7 +275,7 @@ public class StdioTerm implements ActionListener, KeyListener {
     }
     private boolean terminalGeometrySet = false;
     private static String stdioClassName = null;
-    private static String stdioTerminalTitle = "JAR-STDIO Terminal";
+    private static String stdioTerminalTitle = "U.S.S. Tiger";
     boolean inputEofSeen = false;
     private static InputStream in = null, oldIn = null;
     Vector<Byte> inputBuffer = new Vector<Byte>(256);
