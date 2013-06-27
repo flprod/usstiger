@@ -247,9 +247,9 @@ a {
 }
 
 /* Countdown */
-#fall{border:1px dashed #b5e853;font-size:20px;color:#eaeaea;font-family:Arial;height:198px;width:auto;
+#fall{border:1px dashed #b5e853;font-size:20px;color:#b5e853;font-family:Arial;height:198px;width:auto;
   	}
-		#fall .et{font-size:12px;color:#eaeaea;font-family:Arial;
+		#fall .et{font-size:12px;color:#b5e853;font-family:Arial;
 		}
 		#fall table td{
 			font-size:20px;
