@@ -9,49 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
     <title>Usstiger by klickyniko</title>
-    <script type="text/javascript">
-  	var diff=10896649;
-		var interval=true;
-		$(document).ready(function(){
-			if(interval){
-				window.setInterval("calc(--diff)",1000);
-			}
-		});
-		function calc(diff){
-			if(diff>0){
-				var tmp_diff=diff;
-				var d=Math.floor(tmp_diff/86400);
-
-				if(d<10){
-					d='0'+d;
-				}
-				tmp_diff-=d*86400;
-				var h=Math.floor(tmp_diff/3600);
-				if(h<10){
-					h='0'+h;
-				}
-				tmp_diff-=h*3600;
-				var i=Math.floor(tmp_diff/60);
-				if(i<10){
-					i='0'+i;
-				}
-				tmp_diff-=i*60;
-				var s=tmp_diff;
-				if(s<10){
-					s='0'+s;
-				}
-
-				$('#fall .countdown table tr:nth-child(1) td:nth-child(1)').text(d);
-				$('#fall .countdown table tr:nth-child(1) td:nth-child(2)').text(h);
-				$('#fall .countdown table tr:nth-child(1) td:nth-child(3)').text(i);
-				$('#fall .countdown table tr:nth-child(1) td:nth-child(4)').text(s);
-			}
-			else{
-				interval=false;
-				$('#fall').html('<p class="et">Das Spiel müsste in diesem Moment hochgeladen sein!!! </p>');
-			}
-		}
-	</script>
   </head>
 
   <body>
@@ -85,25 +42,105 @@
 <a name="it-is-currently-in-pre-alpha-state" class="anchor" href="#it-is-currently-in-pre-alpha-state"><span class="octicon octicon-link"></span></a>It is currently in pre-alpha state!</h2>
 </blockquote>
      </section>
-<div id="fall"><p class="title">Countdown zum Hochladen von U.S.S. Tiger</p>
-				<div class="countdown">
-					<table cellspacing="0">
-						<tbody>
-							<tr>
-								<td>126</td>
-								<td>02</td>
-								<td>50</td>
-								<td>49</td>
-							</tr>
-							<tr class="cdsmaller">
-								<td>Tage</td>
-								<td>Std</td>
-								<td>Min</td>
-								<td>Sek</td>
-							</tr>
-						</tbody>
-					</table>
-				</div></div>
+     <!-- präsentiert von kostenlose-javascripts.de -->
+<script type='text/javascript'>
+<!--
+var CountdownJahr = 2013;
+var CountdownMonat = 10;
+var CountdownTag = 30;
+var CountdownStunde = 21;
+var CountdownMinute = 0;
+var CountdownSekunde = 4;
+
+document.write('<div id="Countdown" class="wowcdtxt">00:00:00</div>');
+function CountdownAnzeigen()
+{
+    var Jetzt = new Date();
+    var Countdown = new Date(CountdownJahr, CountdownMonat-1, CountdownTag, CountdownStunde, CountdownMinute, CountdownSekunde);
+    var MillisekundenBisCountdown = Countdown.getTime()-Jetzt.getTime();
+    var Rest = Math.floor(MillisekundenBisCountdown/1000);
+    var CountdownText = "";
+	var Tageh = 0;
+	
+	if(MillisekundenBisCountdown <= 0)CountdownText = "abgelaufen";
+
+    if(Rest >= 31536000)
+    {
+        var Jahre = Math.floor(Rest/31536000);
+        Rest = Rest-Jahre*31536000;
+
+        if(Jahre > 1 || Jahre == 0)
+        {
+            //CountdownText += Jahre + " Jahre ";
+        }
+        else if(Jahre == 1)
+        {
+            //CountdownText += Jahre + " Jahr ";
+        }
+    
+    }
+    if(Rest >= 86400)
+    {
+        var Tage = Math.floor(Rest/86400);
+		Rest = Rest-Tage*86400;
+
+        if(Tage > 1 || Tage == 0)
+        {
+            //CountdownText += Tage + " Tage ";
+			Tageh = Tage * 24;
+        }
+        else if(Tage == 1)
+        {
+            //CountdownText += Tage + " Tag ";
+			Tageh = Tage * 24;
+        }
+    }
+    if(Rest >= 3600)
+    {
+        var Stunden = Math.floor(Rest/3600);
+        Rest = Rest-Stunden*3600;
+
+        if(Stunden > 1 || Stunden == 0)
+        {
+            CountdownText += Stunden + Tageh + "h ";
+        }
+        else if(Stunden == 1)
+        {
+            CountdownText += Stunden + Tageh + "h ";
+        }
+    }
+    if(Rest >= 60)
+    {
+        var Minuten = Math.floor(Rest/60);
+        Rest = Rest-Minuten*60;
+
+        if(Minuten > 1 || Minuten == 0)
+        {
+            CountdownText += Minuten + "m ";
+        }
+        else if(Minuten == 1)
+        {
+            CountdownText += Minuten + "m ";
+        }
+    }
+
+    if(Rest > 1 || Rest == 0)
+    {
+        CountdownText += Rest + "s ";
+    }
+    else if(Rest==1)
+    {
+        CountdownText += Rest + "s ";
+    }
+
+    document.getElementById('Countdown').innerHTML = CountdownText;
+    window.setTimeout("CountdownAnzeigen()", 1000);
+}
+//-->
+</script>
+<br />
+<script type="text/javascript">CountdownAnzeigen();</script>
+<!-- präsentiert von kostenlose-javascripts.de -->
     </div>
   </body>
 </html>
