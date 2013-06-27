@@ -9,6 +9,61 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
     <title>Usstiger by klickyniko</title>
+    <script type="text/javascript">
+  	var diff=10896649;
+		var interval=true;
+		$(document).ready(function(){
+			if(interval){
+				window.setInterval("calc(--diff)",1000);
+			}
+		});
+		function calc(diff){
+			if(diff>0){
+				var tmp_diff=diff;
+				var d=Math.floor(tmp_diff/86400);
+
+				if(d<10){
+					d='0'+d;
+				}
+				tmp_diff-=d*86400;
+				var h=Math.floor(tmp_diff/3600);
+				if(h<10){
+					h='0'+h;
+				}
+				tmp_diff-=h*3600;
+				var i=Math.floor(tmp_diff/60);
+				if(i<10){
+					i='0'+i;
+				}
+				tmp_diff-=i*60;
+				var s=tmp_diff;
+				if(s<10){
+					s='0'+s;
+				}
+
+				$('#fall .countdown table tr:nth-child(1) td:nth-child(1)').text(d);
+				$('#fall .countdown table tr:nth-child(1) td:nth-child(2)').text(h);
+				$('#fall .countdown table tr:nth-child(1) td:nth-child(3)').text(i);
+				$('#fall .countdown table tr:nth-child(1) td:nth-child(4)').text(s);
+			}
+			else{
+				interval=false;
+				$('#fall').html('<p class="et">Das Spiel müsste in diesem Moment hochgeladen sein!!! </p>');
+			}
+		}
+	</script>
+	<style type="text/css">
+		#fall{border:1px solid #080d0f;font-size:20px;color:#eaeaea;font-family:Arial;height:198px;width:auto;
+		}
+		#fall .et{font-size:12px;color:#eaeaea;font-family:Arial;
+		}
+		#fall table td{
+			font-size:20px;
+		}
+		#fall table .cdsmaller td{
+			font-size:17px;
+		}
+	</style>
   </head>
 
   <body>
