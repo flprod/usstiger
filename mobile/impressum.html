@@ -1,0 +1,114 @@
+
+<html lang="de">
+	<head profile="http://dublincore.org/documents/dcq-html/" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+		<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+		<meta name="DC.title" content="KlickY - Flashlight Production" />
+		<meta name="DC.creator" content="Nikolaus Schulze-Oechtering" />
+		<meta name="DC.subject" content="Klicky" />
+		<meta name="DC.description" content="Seite von KlickY auf Flashlight Production." />
+		<meta name="DC.publisher" content="Flashlight Production" />
+		<meta name="DC.contributor" content="Maximilian Piechowiak" />
+		<meta name="DC.contributor" content="Sebastian Lutsch" />
+		<meta name="DC.date" content="2013-10-06T18:00:00+01:00" scheme="DCTERMS.W3CDTF" />
+		<meta name="DC.type" content="Text" scheme="DCTERMS.DCMIType" />
+		<meta name="DC.format" content="text/html" scheme="DCTERMS.IMT" />
+		<meta name="DC.identifier" content="http://klicky.flashlight-production.de" scheme="DCTERMS.URI" />
+		<meta name="DC.source" content="http://www.w3.org/TR/html401/struct/global.html#h-7.4.4" scheme="DCTERMS.URI" />
+		<meta name="DC.language" content="de" scheme="DCTERMS.RFC3066" />
+		<meta name="DC.relation" content="http://dublincore.org/" scheme="DCTERMS.URI" />
+		<meta name="DC.coverage" content="Bedford" scheme="DCTERMS.TGN" />
+		<meta name="DC.rights" content="Alle Rechte liegen beim Autor" />
+		<meta name="robots" content="all" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Nikolaus Schulze-Oechtering" />
+		<meta name="description" lang="de" content="Seite von KlickY auf Flashlight Production." />
+		<meta name="description" lang="en-us" content="Site of KlickY on Flashlight Production." />
+		<meta name="description" lang="en" content="Site of KlickY on Flashlight Production." />
+		<meta name="description" lang="fr" content="La site de KlickY sur Flashlight Production." />
+		<meta name="keywords" content="KlickY, klickyniko, xyzKlicky, Flashlight, Production, Flashlight Production, Flashlight-Production, flprod" />
+		<meta name="date" content="2013-10-06T17:37+1:00" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="content-language" content="de">
+		<link rel="top" title="Flashlight Production" href="http://flashlight-production.de/" />
+		<link rel="author" title="Impressum" href="impressum.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>KlickY - Flashlight Production</title>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script>
+			$(function() {
+				$( "[data-role='navbar']" ).navbar();
+				$( "[data-role='header'], [data-role='footer']" ).toolbar();
+			});
+			// Update the contents of the toolbars
+			$( document ).on( "pageshow", "[data-role='page']", function() {
+				// Each of the four pages in this demo has a data-title attribute
+				// which value is equal to the text of the nav button
+				// For example, on first page: <div data-role="page" data-title="Products">
+				var current = $( this ).jqmData( "title" );
+				// Change the heading
+				$( "[data-role='header'] h1" ).text( current );
+				// Remove active class from nav buttons
+				$( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
+				// Add active class to current nav button
+				$( "[data-role='navbar'] a" ).each(function() {
+					if ( $( this ).text() === current ) {
+						$( this ).addClass( "ui-btn-active" );
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div data-role="header" id="header" data-theme="a" data-position="fixed">
+			<a href="#lpanel" class="ui-btn ui-btn-left ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-left">Menu</a>
+			<h1>Home</h1>
+			<a href="#rpanel" class="ui-btn ui-btn-right ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">Preferences</a>
+			<div data-role="navbar" class="ui-state-persist">
+				<ul>
+					<li><a href="." data-icon="home" data-prefetch="true" data-transition="slide" class="ui-btn-active">Home</a></li>
+					<li><a href="products" data-icon="shop" data-prefetch="true" data-transition="fade">Products</a></li>
+					<li><a href="contact" data-icon="mail" data-prefetch="true" data-transition="pop">Contact</a></li>
+					<li><a href="impressum" data-icon="info" data-prefetch="true" data-transition="flick">Impressum</a></li>
+				</ul>
+			</div>
+		</div><div data-role="page" data-title="Impressum" data-theme="a">
+	<div data-role="content">	
+		<h1>Impressum</h1>
+		<p>Diese Website die mobile Seite von</p>
+		<p><a href="http://www.flashlight-production.de/">www.flashlight-production.de</a></p>
+		<p>Alle Inhalte, die auf diese Seite zurückzuführen sind, sind rechtlich geregelt; diese, sowie die der eigenen Website dürfen, ohne vorherige Vereinbarungen nicht direkt übernommen werden.</p>
+		<p>Produkte, die kostenlos auf dieser Seite im Ordner Projekte zu finden sind, bleiben bis auf weiteres solange kostenlos, wie sie für den privaten Gebrauch bestimmt sind. (Natürlich würden wir uns über ein Trinkgeld freuen). Wenn Sie die zur Verfügung gestellten Angebote geschÃ¤ftlich nutzen möchten, bitten Sie sich mit uns in Verbindung zu treten. Sollten die Produkte doch, ohne Zustimmung, geschäftlich genutzt werden, wird dies strafrechtliche Konsequenzen haben. 
+Alle Angebote sind bis auf weiteres von einer Rückgabe ausgeschlossen, sollten sich wiedererwartend doch Probleme einschleichen, werden wir selbstverständlich bereit Ihnen mit diesen zu helfen.</p>
+		<p>Vielen Dank für Ihr Verständnis.<p>
+	</div>
+<div data-role="panel" id="lpanel" data-position="left" data-position-fixed="true" data-display="push" data-theme="a">
+	<div class="ui-panel-inner" data-theme="a">
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search..." data-inset="true">
+			<li><a href=".">Home</a></li>
+			<li><a href="products">Products</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="impressum">Impressum</a></li>
+		</ul>
+	</div>
+</div>
+
+<div data-role="panel" id="rpanel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a">
+	<div class="ui-panel-inner" data-theme="a">
+		<form action="" method="post">
+			<div data-role="controlgroup">
+				<input name="username" id="username" value="" type="text" placeholder="Username">
+				<input name="password" id="password" value="" autocomplete="off" type="password" placeholder="Password">
+				<button type="send">Login</button>
+			</div>
+		</form>
+	</div>
+</div></div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h4>© 2014 Flashlight Production</h4>
+		</div>
+	</body>
+</html>
